@@ -12,9 +12,10 @@ public class devicelist extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.devicelist);
 
-        getSupportActionBar().hide(); // Hide action bar
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Enable back navigation
 
-        initNavigationListeners();
+
+
     }
 
     private void initNavigationListeners() {
@@ -23,6 +24,36 @@ public class devicelist extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), viewscreen.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.camera2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), viewscreen.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.camera3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), viewscreen.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.edit).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), editdevice.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.add).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), deviceadd.class);
                 startActivity(intent);
             }
         });

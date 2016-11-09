@@ -16,17 +16,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/button2"
+        android:id="@+id/edit"
         android:textSize="24sp" />
 
     <Button
         android:text="Add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_toEndOf="@+id/button2"
+        android:layout_alignBottom="@+id/edit"
+        android:layout_toEndOf="@+id/edit"
         android:layout_marginStart="185dp"
-        android:id="@+id/button4"
+        android:id="@+id/add"
         android:textSize="24sp" />
 
     <Button
@@ -34,27 +34,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/camera"
-        android:layout_above="@+id/button6"
+        android:layout_above="@+id/camera2"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="36dp"
         android:textSize="36sp" />
 
     <Button
-        android:text="Device Number 2"
+        android:text="viewcamera2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button6"
+        android:id="@+id/camera2"
         android:layout_centerVertical="true"
         android:layout_alignStart="@+id/camera"
         android:textSize="36sp" />
 
     <Button
-        android:text="Device Number 3"
+        android:text="viewcamera3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="39dp"
-        android:id="@+id/button7"
+        android:id="@+id/camera3"
         android:textSize="36sp"
-        android:layout_below="@+id/button6"
-        android:layout_alignStart="@+id/button6" />
+        android:layout_below="@+id/camera2"
+        android:layout_alignStart="@+id/camera2" />
 </RelativeLayout>

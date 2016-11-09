@@ -12,6 +12,8 @@ public class viewscreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_viewscreen);
 
+
+
         VideoView mVideoView = (VideoView) findViewById(R.id.videoView);
         String uriPath = "android.resource://com.example.haydenpunchescamels.ispywithmylittleeye/" + R.raw.movie;
         Uri uri2 = Uri.parse(uriPath);

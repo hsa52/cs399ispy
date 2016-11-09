@@ -15,11 +15,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".devicelist" />
-        <activity android:name=".settingspage" />
-        <activity android:name=".deviceadd" />
-        <activity android:name=".editdevice" />
-        <activity android:name=".viewscreen"></activity>
+        <activity android:name=".devicelist"
+            android:label="Manage Devices">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".homepage" />
+        </activity>
+        <activity android:name=".settingspage"
+            android:label="Settings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".homepage" />
+        </activity>
+        <activity android:name=".editdevice"
+            android:label="Edit Devices">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".devicelist" />
+        </activity>
+        <activity android:name=".deviceadd"
+            android:label="Add Device">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".devicelist" />
+        </activity>
+        <activity android:name=".viewscreen"
+            android:label="Live Camera Feed">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".devicelist" />
+        </activity>
     </application>
 
 </manifest>
