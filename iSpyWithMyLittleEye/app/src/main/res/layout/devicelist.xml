@@ -30,10 +30,10 @@
         android:textSize="24sp" />
 
     <Button
-        android:text="Device Number 1"
+        android:text="viewCamera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button5"
+        android:id="@+id/camera"
         android:layout_above="@+id/button6"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="36dp"
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/button6"
         android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/button5"
+        android:layout_alignStart="@+id/camera"
         android:textSize="36sp" />
 
     <Button
