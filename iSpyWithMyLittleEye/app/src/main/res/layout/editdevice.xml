@@ -63,10 +63,11 @@
         android:layout_alignStart="@+id/editText8" />
 
     <Button
-        android:text="Back"
+        android:text="Save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/button10" />
+        android:id="@+id/saveEdit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp" />
 </RelativeLayout>

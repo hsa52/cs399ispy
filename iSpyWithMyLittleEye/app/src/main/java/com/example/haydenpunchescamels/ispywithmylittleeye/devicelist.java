@@ -14,6 +14,9 @@ public class devicelist extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Enable back navigation
 
+        initNavigationListeners();
+
+
 
 
     }

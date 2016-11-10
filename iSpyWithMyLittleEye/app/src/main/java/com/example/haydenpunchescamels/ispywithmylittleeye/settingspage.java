@@ -10,6 +10,7 @@ public class settingspage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settingspage);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Enable back navigation
 
     }
 }

@@ -10,6 +10,7 @@ public class deviceadd extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.deviceadd);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Enable back navigation
 
     }
 }
