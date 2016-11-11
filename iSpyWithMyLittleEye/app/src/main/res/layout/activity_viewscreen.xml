@@ -11,9 +11,9 @@
     tools:context="com.example.haydenpunchescamels.ispywithmylittleeye.viewscreen">
 
     <VideoView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:id="@+id/videoView"
-        android:layout_alignParentBottom="true" />
+        />
 </RelativeLayout>

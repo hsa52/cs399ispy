@@ -7,10 +7,13 @@ import android.view.View;
 
 public class devicelist extends AppCompatActivity {
 
+    public MainGlobal mainGlobal;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.devicelist);
+//        mainGlobal = (MainGlobal) this.getApplication();
+//        mainGlobal.camera.add("Sfdsf");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Enable back navigation
 
