@@ -20,35 +20,6 @@
         android:textSize="24sp" />
 
     <Button
-        android:text="viewCamera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/camera"
-        android:layout_above="@+id/camera2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="36dp"
-        android:textSize="36sp" />
-
-    <Button
-        android:text="viewcamera2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/camera2"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/camera"
-        android:textSize="36sp" />
-
-    <Button
-        android:text="viewcamera3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="39dp"
-        android:id="@+id/camera3"
-        android:textSize="36sp"
-        android:layout_below="@+id/camera2"
-        android:layout_alignStart="@+id/camera2" />
-
-    <Button
         android:text="Add Device"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,4 +27,9 @@
         android:textSize="24sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/devices" />
 </RelativeLayout>

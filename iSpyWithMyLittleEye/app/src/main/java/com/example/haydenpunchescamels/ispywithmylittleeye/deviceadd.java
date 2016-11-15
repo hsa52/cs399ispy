@@ -20,24 +20,24 @@ public class deviceadd extends AppCompatActivity {
         setContentView(R.layout.deviceadd);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Enable back navigation
+        mainGlobal = (MainGlobal) this.getApplication();
 
-//        mainGlobal = ((MainGlobal) this.getApplication());
-//        cameraName = (EditText) findViewById(R.id.deviceName);
-//        cameraType = (Spinner) findViewById(R.id.chooseDevice);
-//
-//
-//        findViewById(R.id.addDevice).setOnClickListener(new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View v) {
-//                String cN = cameraName.getText().toString();
-//                String cT = cameraType.toString();
-//                mainGlobal.addCamera(cN, cT, "android.resource://com.example.haydenpunchescamels.ispywithmylittleeye/\" + R.raw.movie;");
-//
-//                Intent intent = new Intent(getApplicationContext(), devicelist.class);
-//                startActivity(intent);
-//
-//                }
-//            });
+        initNavigationListeners();
+
+    }
+
+    private void initNavigationListeners() {
+        // Set play button listener
+        findViewById(R.id.addDevice).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EditText deviceName = (EditText) findViewById(R.id.deviceName);
+                mainGlobal.cameras.add(deviceName.getText().toString());
+
+                Intent intent = new Intent(getApplicationContext(), devicelist.class);
+                startActivity(intent);
+            }
+        });
     }
 }
