@@ -14,10 +14,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Edit Device Name"
+        android:text="Camera"
         android:ems="10"
         android:layout_marginTop="47dp"
-        android:id="@+id/editText7"
+        android:id="@+id/viewCamera"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true" />
 
@@ -63,10 +63,11 @@
         android:layout_alignStart="@+id/editText8" />
 
     <Button
-        android:text="Back"
+        android:text="Save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/button10" />
+        android:id="@+id/saveEdit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp" />
 </RelativeLayout>

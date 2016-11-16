@@ -9,5 +9,8 @@ public class settingspage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settingspage);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Enable back navigation
+
     }
 }

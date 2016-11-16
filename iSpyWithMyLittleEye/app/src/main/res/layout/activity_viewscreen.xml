@@ -11,9 +11,18 @@
     tools:context="com.example.haydenpunchescamels.ispywithmylittleeye.viewscreen">
 
     <VideoView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/videoView"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/deleteCamera" />
+
+    <Button
+        android:text="Delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/videoView"
-        android:layout_alignParentBottom="true" />
+        android:id="@+id/deleteCamera"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
