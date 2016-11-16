@@ -11,5 +11,10 @@
         <item>Game Console</item>
         <item>Security Camera</item>
     </string-array>
+<<<<<<< HEAD
+    <string name="title_activity_addingadevice">addingadevice</string>
+    <string name="long_lorem" />
+=======
+>>>>>>> origin/master
 
 </resources>
