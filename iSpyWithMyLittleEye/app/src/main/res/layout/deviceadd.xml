@@ -23,15 +23,17 @@
         android:layout_centerHorizontal="true"
         android:textAlignment="center" />
 
-    <Spinner
+    <EditText
         android:id="@+id/chooseDevice"
         android:layout_width="match_parent"
         android:entries="@array/device_array"
+        android:hint="Device Type"
         android:prompt="@string/chooseDevice"
         android:layout_height="wrap_content"
         android:layout_below="@+id/deviceName"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="42dp" />
+        android:layout_marginTop="42dp"
+        android:textAlignment="center"/>
 
     <Button
         android:text="Add Device"

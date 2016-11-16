@@ -33,7 +33,9 @@ public class deviceadd extends AppCompatActivity {
             public void onClick(View v) {
 
                 EditText deviceName = (EditText) findViewById(R.id.deviceName);
-                mainGlobal.cameras.add(deviceName.getText().toString());
+                EditText deviceType = (EditText) findViewById(R.id.chooseDevice);
+
+                mainGlobal.cameras.add(deviceName.getText().toString() + " " + deviceName.getText().toString());
 
                 Intent intent = new Intent(getApplicationContext(), devicelist.class);
                 startActivity(intent);
