@@ -1,7 +1,10 @@
 package com.example.haydenpunchescamels.ispywithmylittleeye;
 
 import android.content.Intent;
+<<<<<<< HEAD
 import android.media.MediaPlayer;
+=======
+>>>>>>> origin/master
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,6 +26,7 @@ public class viewscreen extends AppCompatActivity {
         getSupportActionBar().setTitle(mainGlobal.cameras.get(mainGlobal.currentCamera));
 
         VideoView mVideoView = (VideoView) findViewById(R.id.videoView);
+<<<<<<< HEAD
 
         mVideoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             public void onCompletion(MediaPlayer mp) {
@@ -31,13 +35,19 @@ public class viewscreen extends AppCompatActivity {
         });
 
         String uriPath = "android.resource://com.example.haydenpunchescamels.ispywithmylittleeye/" + R.raw.ghosties;
+=======
+        String uriPath = "android.resource://com.example.haydenpunchescamels.ispywithmylittleeye/" + R.raw.movie;
+>>>>>>> origin/master
         Uri uri2 = Uri.parse(uriPath);
         mVideoView.setVideoURI(uri2);
         mVideoView.requestFocus();
         mVideoView.start();
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/master
         Button deleteCamera = (Button) findViewById(R.id.deleteCamera);
 
         deleteCamera.setOnClickListener(new View.OnClickListener() {
@@ -48,7 +58,17 @@ public class viewscreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+<<<<<<< HEAD
 
         }
     }
 
+=======
+    }
+
+
+
+
+
+}
+>>>>>>> origin/master
